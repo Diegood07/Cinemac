@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>CineMac</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'img' %}">
 </head>
 
@@ -144,187 +144,170 @@
             </div>
         </div>
     </main>
-
+    
     <div id="peliculasenindex">
         <div class="container-md p-5">
-            <div class="row pt-8" style="padding-bottom: 20px;">
-
-                <h3 id="titulopeliculas" class="text-center pb-5 pt-5 h1">!!NUEVOS LANZAMIENTOS!!</h3>
-                <br>
-            </div>
-            <div class="contenedor-items">
-                <div class="item">
-                    <div class="card h-100 card-border mb-5">
-                        <img src="{% static 'img/Peliculas/thewhalefondo.jpg' %}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">The Whale</h5>
-                            <p class="card-text">$ 4000
-                                <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Ver Más</a>
-                        </div>
-                    </div>
+          <div class="row pt-8" style="padding-bottom: 20px;">
+            
+            <h3 id="titulopeliculas" class="text-center pb-5 pt-5 h1">!!NUEVOS LANZAMIENTOS!!</h3>
+            <br>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/thewhalefondo.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Whale</h5>
+                  <p class="card-text">Director: Darren Aronofsky <br>
+                    Guionistas: Samuel D. Hunter <br>
+                    Reparto principal: Brendan Fraser, Sadie Sink, Hong Chau, Ty Simpkins <br>
+                    Géneros: Drama <br>
+                    País: Estados Unidos</p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
                 </div>
-                <div class="container-md p-5">
-                    <div class="contenedor-items">
-                        <div class="item">
-                            <div class="card h-100 card-border mb-5">
-                                <img src="{% static 'img/Peliculas/Creed3Fondo.jpg' %}" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Creed 3</h5>
-                                    <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Ver Más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-md p-5">
-                            <div class="contenedor-items">
-                                <div class="item">
-                                    <div class="card h-100 card-border mb-5">
-                                        <img src="{% static 'img/Cartelera/megan.jpg' %}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">M3gan</h5>
-                                            <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Ver
-                                                Más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/Creed3Fondo.jpg' %}" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Creed 3</h5>
+                  <p class="card-text">Director: Michael B. Jordan <br> Guionistas: Keenan Coogler y Zach Baylin <br> Reparto principal: Michael B. Jordan, Tessa Thompson, Phylicia Rashad y Jonathan Majors <br> Generos: Drama/Deportivo <br> País: Estados Unidos</p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Cartelera/megan.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">M3gan</h5>
+                  <p class="card-text">Director: Gerard Johnstone <br> Guionistas: Akela Cooper y James Wan <br> Reparto principal: Amie Donald, Jenna Davis, Allison Williams, Violet McGraw <br> Generos: Terror/Ciencia ficción <br> País: Estados Unidos</p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <div class="container-md p-5">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/shazam2fondo.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shazam</h5>
+                  <p class="card-text">Director: David F. Sandberg <br> Guionistas: Henry Gayden y Chris Morgan <br> Reparto principal: Zachary Levi, Asher Angel, Jack Dylan Grazer, Rachel Zegler, Adam Brody, Ross Butler, Meagan Good, Lucy Liu, Djimon Hounsou, y Helen Mirren <br> Generos: 	Acción, cine de superhéroes, comedia y aventuras <br> País: Estados Unidos </p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Cartelera/antman.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ant-Man</h5>
+                  <p class="card-text">Director: Peyton Reed <br> Guionistas: Jeff Loveness <br> Reparto principal: Paul Rudd, Evangeline lilly, Jonathan Majors, Kathryn Newton, Michelle Pfeiffer, Michael Douglas, David Dastmalchian, William Jackson Harper y Katy O'Brian <br> Generos: Acción, fantasía, ciencia ficción, aventuras, comedia y suspenso <br> País: Estados Unidos y Turquía </p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/Avatar2Movie.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Avatar 2</h5>
+                  <p class="card-text">Director: James Cameron <br> Guionistas: James Cameron, Josh Friedman <br> Reparto principal: 	Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Giovanni Ribisi, Joel David Moore, C. C. H. Pounder, Laz Alonso, Kate Winslet <br> Generos: Ciencia ficción, Aventura, Acción, Fantasía, Animación <br> País: Estados Unidos</p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-md p-5">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/Terrifier2movie.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Terrifier 2</h5>
+                  <p class="card-text">Director: Damien Leone <br> Guionistas: Damien Leone <br> Reparto principal: Jenna Kanell, Samantha Scaffidi, David Howard Thornton, Catherine Corcoran <br> Generos: Slasher y terror <br> País: Estados Unidos </p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/Scream6Fondo.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Scream 6</h5>
+                  <p class="card-text">Director: Matt Bettinelli-Olpin, Tyler Gillett <br> Guionistas: Guy Busick, James Vanderbilt <br> Reparto principal: +Courteney Cox, Melissa Barrera, Jenna Ortega, Hayden Panettiere, Jasmin Savoy Brown, Mason Gooding, Dermot Mulroney <br> Generos: Slasher <br> País: Estados Unidos </p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card h-100 card-border mb-5">
+                <img src="{% static 'img/Peliculas/Johnwick4fondo.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">John Wick 4</h5>
+                  <p class="card-text">Director: Chad Stahelski <br> Guionistas: Shay Hatten, Michael Finch <br> Reparto principal: Keanu Reeves, Laurence Fishburne, Ian McShane, Lance Reddick, Rina Sawayama, Donnie Yen, Bill Skarsgård, Hiroyuki Sanada, Shamier Anderson <br> Generos: 	Acción, Aventura, Suspenso, Neo-noir, Tragedia <br> País: Estados Unidos </p>
+                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+    </div>    
+    <footer class="Piedepagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
 
-                        </div>
-                        <div class="container-md p-5">
-                            <div class="contenedor-items">
-                                <div class="item">
-                                    <div class="card h-100 card-border mb-5">
-                                        <img src="{% static 'img/Peliculas/shazam2fondo.jpg' %}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Shazam</h5>
-                                            <p>$ 4000</p>
-                                            <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Ver
-                                                Más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container-md p-5">
-                                    <div class="contenedor-items">
-                                        <div class="item">
-                                            <div class="card h-100 card-border mb-5">
-                                                <img src="{% static 'img/Cartelera/antman.jpg' %}" class="card-img-top"
-                                                    alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Ant-Man</h5>
-                                                    <p>$ 4000</p>
-                                                    <a href="{% url 'cartelera' %}" class="btn btn-primary"
-                                                        target="_blank">Ver Más</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="container-md p-5">
-                                            <div class="contenedor-items">
-                                                <div class="item">
-                                                    <div class="card h-100 card-border mb-5">
-                                                        <img src="{% static 'img/Peliculas/Avatar2Movie.jpg' %}"
-                                                            class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Avatar 2</h5>
-                                                            <p>$ 4000</p>
-                                                            <a href="{% url 'cartelera' %}" class="btn btn-primary"
-                                                                target="_blank">Ver Más</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="container-md p-5">
-                                            <div class="contenedor-items">
-                                                <div class="item">
-                                                    <div class="card h-100 card-border mb-5">
-                                                        <img src="{% static 'img/Peliculas/Terrifier2movie.jpg' %}"
-                                                            class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Terrifier 2</h5>
-                                                            <p>$ 4000</p>
-                                                            <a href="{% url 'cartelera' %}" class="btn btn-primary"
-                                                                target="_blank">Ver Más</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm">
-                                                    <div class="card h-100 card-border mb-5">
-                                                        <img src="{% static 'img/Peliculas/Scream6Fondo.jpg' %}"
-                                                            class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Scream 6</h5>
-                                                            <p>$ 4000</p>
-                                                            <a href="{% url 'cartelera' %}" class="btn btn-primary"
-                                                                target="_blank">Ver Más</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm">
-                                                    <div class="card h-100 card-border mb-5">
-                                                        <img src="{% static 'img/Peliculas/Johnwick4fondo.jpg' %}"
-                                                            class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">John Wick 4</h5>
-                                                            $ 4000
-                                                            <a href="{% url 'cartelera' %}" class="btn btn-primary"
-                                                                target="_blank">Ver Más</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <footer class="Piedepagina">
-                                        <div class="grupo1">
-                                            <div class="box">
-                                                <figure>
-
-                                                    <img src="{% static 'img/Logopag/Logo.png' %}"
-                                                        alt="Logo de la pagina">
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                            <div class="box">
-                                                <h2>SOBRE NOSOTROS</h2>
-                                                <p>Somos una empresa de cine que recién está surgiendo</p>
-                                                <p>Nuestro objetivo es dar a las personas las mejores películas con
-                                                    mayor calidad </p>
-                                            </div>
-                                            <div class="box">
-                                                <h2>SÍGUENOS</h2>
-                                                <div class="red-social">
-                                                    <a href="https://www.instagram.com/" class="bi bi-instagram"
-                                                        target="_blank">
-                                                        <img src="{% static 'img/Redes_Sociales/instagramlogodef.png' %}"
-                                                            width="45" height="45" alt="">
-                                                    </a>
-                                                    <a href="https://es-la.facebook.com/" class="bi bi-facebook"
-                                                        target="_blank">
-                                                        <img src="{% static 'img/Redes_Sociales/Facebook_logo_(square).png' %}"
-                                                            width="45" height="45" alt="">
-                                                    </a>
-                                                    <a href="https://twitter.com/?lang=es" class="bi bi-twitter"
-                                                        target="_blank">
-                                                        <img src="{% static 'img/Redes_Sociales/twitter-logo-4.png' %}"
-                                                            width="45" height="45" alt="">
-                                                    </a>
-                                                    <a href="https://www.youtube.com/" class="bi bi-youtube"
-                                                        target="_blank">
-                                                        <img src="{% static 'img/Redes_Sociales/Youtube_logo.png' %}"
-                                                            width="45" height="45" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="grupo2">
-                                            <small>&copy; 2023 <b>CINEMAC</b> - Todos los Derechos Reservados.</small>
-                                        </div>
-                                    </footer>
+                    <img src="{% static 'img/Logopag/Logo.png' %}"
+                        alt="Logo de la pagina">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una empresa de cine que recién está surgiendo</p>
+                <p>Nuestro objetivo es dar a las personas las mejores películas con
+                    mayor calidad </p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/" class="bi bi-instagram"
+                        target="_blank">
+                        <img src="{% static 'img/Redes_Sociales/instagramlogodef.png' %}"
+                            width="45" height="45" alt="">
+                    </a>
+                    <a href="https://es-la.facebook.com/" class="bi bi-facebook"
+                        target="_blank">
+                        <img src="{% static 'img/Redes_Sociales/Facebook_logo_(square).png' %}"
+                            width="45" height="45" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=es" class="bi bi-twitter"
+                        target="_blank">
+                        <img src="{% static 'img/Redes_Sociales/twitter-logo-4.png' %}"
+                            width="45" height="45" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/" class="bi bi-youtube"
+                        target="_blank">
+                        <img src="{% static 'img/Redes_Sociales/Youtube_logo.png' %}"
+                            width="45" height="45" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>CINEMAC</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="{% static 'js/inicio.js' %}" async></script>
 </body>
 </html>

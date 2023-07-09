@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  a:hover {
+    background-color: #555;
+  }
+  
+  .admin-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-box p {
+    margin: 0;
+  }
+  
+  .admin-box strong {
+    font-weight: bold;
+  }
+  
+  /* Estilos específicos de temática de cine */
+  body {
+    background-image: url('ruta/a/imagen_de_fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  nav {
+    border-bottom: 1px solid #fff;
+  }
+  
+  ul {
+    padding: 15px 0;
+  }
+  
+  a {
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #e6b800;
+  }
+  
+  .admin-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

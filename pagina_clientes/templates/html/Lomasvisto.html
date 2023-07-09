@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" href="{% static 'img/Logopag/test2.jpg' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+	<link rel="stylesheet" href="{% static 'css/api.css' %}">
+	<link rel="stylesheet" href="{% static 'js/apicine.js' %}">
+
+	<title>Sitio de peliculas</title>
+
+
+
+
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">CineMac</h2>
+			<nav>
+				<a href="{% url 'index' %}">Inicio</a>
+				<a href="{% url 'cartelera' %}">Cartelera</a>
+				<a href="{% url 'preventas' %}">Preventas</a>
+				<a href="{% url 'mas_visto' %}" class="activo">Lo Más Visto</a>
+				<a href="{% url 'login' %}">Iniciar Sesión</a>
+			</nav>
+		</div>
+	</header>
+	<div class="contenedor" id="contenedor"></div>
+
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+	</div>
+	<footer class="Piedepagina" >
+        <div class="grupo1">
+          <div class="box">
+            <figure>
+              <a href="{% url 'index' %}">
+                <img src="{% static 'img/Logopag/Logo.png' %}" alt="Logo de la pagina">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos una empresa de cine que recién está surgiendo</p>
+            <p>Nuestro objetivo es dar a las personas las mejores películas con mayor calidad </p>
+          </div>
+          <div class="box">
+            <h2>SÍGUENOS</h2>
+            <div class="red-social">
+				<a href="https://www.instagram.com/" class="bi bi-instagram" target="_blank">
+					<img src="{% static 'img/Redes_Sociales/instagramlogodef.png' %}" width="45" height="45" alt="">
+				  </a>
+				  <a href="https://es-la.facebook.com/" class="bi bi-facebook" target="_blank">
+					<img src="{% static 'img/Redes_Sociales/Facebook_logo_(square).png' %}" width="45" height="45" alt="">
+				  </a>
+				  <a href="https://twitter.com/?lang=es" class="bi bi-twitter" target="_blank">
+					<img src="{% static 'img/Redes_Sociales/twitter-logo-4.png' %}" width="45" height="45" alt="">
+				  </a>
+				  <a href="https://www.youtube.com/" class="bi bi-youtube" target="_blank">
+					<img src="{% static 'img/Redes_Sociales/Youtube_logo.png' %}" width="45" height="45" alt="">
+				  </a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo2">
+          <small>&copy; 2023 <b>CINEMAC</b> - Todos los Derechos Reservados.</small>
+        </div>
+      </footer>
+
+
+
+
+
+
+	<script src="{% static 'js/apicine.js' %}"></script>
+</body>
+
+</html>

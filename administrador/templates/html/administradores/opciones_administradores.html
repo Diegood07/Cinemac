@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Total de administradores</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'admins_totales' %}">Todos los administradores</a></li>
+            <li><a href="{% url 'crear_admin' %}">Crear administrador</a></li>
+            <li><a href="{% url 'opciones_administrador' %}">Opciones para los administradores</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Opciones para los administradores</h1>
+    <div id="idMensaje">
+        {% if mensaje %}
+            {{mensaje}}
+        {% endif %}
+    </div>
+    <table>
+        {% if administradores %}
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>CONTRASEÑA</th>
+        <th>MODIFICAR</th>
+        <th>ELIMINAR</th>
+        {% for a in administradores %}
+            <tr>
+                <td>{{a.id_admin}}</td>
+                <td>{{a.nombre_admin}}</td>
+                <td>{{a.contrasena_admin}}</td>
+                <td><a href="{% url 'encontrar_administrador' pk=a.id_admin %}"class="btm-Modificar">Modificar</a></td>
+                <td><a href="{% url 'eliminar_administrador'  pk=a.id_admin %}"class="btm-Eliminar">Eliminar</a></td>
+            </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+</body>

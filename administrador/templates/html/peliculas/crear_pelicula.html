@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Subir pelicula</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'peliculas_totales' %}">Peliculas</a></li>
+            <li><a href="{% url 'crear_pelicula' %}">Crear Pelicula</a></li>
+            <li><a href="{% url 'opciones_peliculas' %}">Opciones peliculas</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <div class="formulario">
+        <h1>Agregar pelicula</h1>
+        <form action="{% url 'crear_pelicula' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <pre>Titulo:                    <input type="text" name="titulo"></pre>
+            <pre>Precio:                    <input type="number" name="precio"></pre>
+            <pre>Imagen:                    <input type="file" name="imagen"></pre>
+            <div id="idMensaje">
+                {% if mensaje %}
+                {{mensaje}}
+                {% endif %}
+            </div>
+            <div class="button-container">
+                <input type="submit" name="opcion" value="Agregar">
+            </div>
+        </form>
+    </div>
+</body>

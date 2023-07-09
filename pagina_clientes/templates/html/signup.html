@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/EstiloRegistro.css' %}">
+    <title>Registro</title>
+</head>
+<body>
+    <section>
+        <h2>Registro</h2>
+        {% if error %}
+            <p class="mensaje_error">{{ error }}</p>
+        {% endif %}
+        <form id="signupForm" action="{% url 'signup' %}" method="POST">
+            {% csrf_token %}
+            <label>Correo Electronico</label>
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" placeholder="Email" id="email" name="email"  required>
+            <label>Contraseña</label>
+            <i class="fas fa-key icon"></i>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <input type="submit" value="Registro">
+            <h5>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</h5>
+            <p>Ya tienes una cuenta? <a href="{% url 'login' %}">Iniciar Sesion</a></p>
+        </form>
+    </section>
+</body>
+</html>

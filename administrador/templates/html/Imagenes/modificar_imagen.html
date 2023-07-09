@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Modificar imagen</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'imagenes_totales' %}">Todas las imagenes</a></li>
+            <li><a href="{% url 'subir_imagen' %}">Subir imagen</a></li>
+            <li><a href="{% url 'opciones_imagenes' %}">Opciones para las imagenes</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <div class="formulario">
+        <h1>Modificar datos de la imagen</h1>
+        <form action="{% url 'modificar_imagen' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="hidden" name="id_imagen" value="{{ imagen.id_imagen }}">
+            <pre>ID imagen:                   <input type="text" name="id_imagen" value="{{ imagen.id_imagen }}" readonly></pre>
+            <pre>Imagen:                      <input type="file" name="file_imagen" value="{{ imagen.imagen }}"></pre>
+            <pre>Titulo imagen:          <input type="text" name="titulo_imagen" value="{{ imagen.titulo }}"></pre>
+            <pre>Descripción imagen:          <input type="text" name="descripcion_imagen" value="{{ imagen.descripcion_imagen }}"></pre>
+            <input type="submit" name="opcion" value="Actualizar datos">
+            {% if mensaje %}
+            <div>{{ mensaje }}</div>
+            {% endif %}
+            {% if productos %}
+        </form>
+        {% endif %}
+    </div>
+</body>

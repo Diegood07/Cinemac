@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
+    <title>Crear usuario</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'usuarios_totales' %}">Todos los usuarios</a></li>
+            <li><a href="{% url 'crear_usuario' %}">Crear usuario</a></li>
+            <li><a href="{% url 'opciones_usuarios' %}">Opciones para los usuarios</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <div class="formulario">
+        <h1>Agregar Usuario</h1>
+        <form action="{% url 'crear_usuario' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <pre>Correo del usuario:          <input type="text" name="correo_usuario"></pre>
+            <pre>Contraseña:                  <input type="text" name="contrasena_usuario"></pre>
+            <pre>Confirmar contraseña:        <input type="text" name="confirmar_contrasena_usuario"></pre>
+            <div id="idMensaje">
+                {% if mensaje %}
+                {{mensaje}}
+                {% endif %}
+            </div>
+            <div class="button-container">
+                <input type="submit" name="opcion" value="Agregar">
+            </div>
+        </form>
+    </div>
+</body>

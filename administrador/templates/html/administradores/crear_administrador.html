@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
+    <title>Crear Administrador</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'admins_totales' %}">Todos los administradores</a></li>
+            <li><a href="{% url 'crear_admin' %}">Crear administrador</a></li>
+            <li><a href="{% url 'opciones_administrador' %}">Opciones para los administradores</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Agregar Administrador</h1>
+    <form action="{% url 'crear_admin' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <pre>Nombre de administrador:           <input type="text" name="nombre_admin"></pre>
+        <pre>Contraseña:                        <input type="text" name="contrasena_admin"></pre>
+        <pre>Confirmar contraseña:              <input type="text" name="confirmar_contrasena_admin"></pre>
+        <div id="idMensaje">
+            {% if mensaje %}
+            {{mensaje}}
+            {% endif %}
+        </div>
+        <div class="button-container">
+            <input type="submit" name="opcion" value="Agregar">
+        </div>
+    </form>
+</body>

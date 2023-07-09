@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Imagenes</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'imagenes_totales' %}">Todas las imagenes</a></li>
+            <li><a href="{% url 'subir_imagen' %}">Subir imagen</a></li>
+            <li><a href="{% url 'opciones_imagenes' %}">Opciones para las imagenes</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Panel de Administración de las imagenes</h1>
+    <table>
+        {% if imagen %}
+        <th>ID</th>
+        <th>IMAGEN</th>
+        <th>TITULO</th>
+        <th>DESCRIPCION</th>
+        <th>MODIFICAR</th>
+        <th>ELIMINAR</th>
+        {% for i in imagen %}
+            <tr>
+                <td>{{i.id_imagen}}</td>
+                <td><img src="{{ MEDIA_URL }}{{ i.imagen.url }}"></td>
+                <td>{{i.titulo}}</td>
+                <td>{{i.descripcion_imagen}}</td>
+                <td><a href="{% url 'encontrar_imagen' pk=i.id_imagen %}"class="btm-Modificar">Modificar</a></td>
+                <td><a href="{% url 'eliminar_imagen'  pk=i.id_imagen %}"class="btm-Eliminar">Eliminar</a></td>
+            </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+    <div id="idMensaje">
+        {% if mensaje %}
+            {{mensaje}}
+        {% endif %}
+    </div>
+</body>

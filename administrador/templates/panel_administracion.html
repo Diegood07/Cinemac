@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Panel de administrador</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'usuarios_totales' %}">Usuarios</a></li>
+            <li><a href="{% url 'peliculas_totales' %}">Peliculas</a></li>
+            <li><a href="{% url 'admins_totales' %}">Administradores</a></li>
+            <li><a href="{% url 'imagenes_totales' %}">Imagenes</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Pagina de administrador principal</h1>
+</body>
+</html>

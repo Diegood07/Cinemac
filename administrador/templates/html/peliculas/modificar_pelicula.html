@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Modificar pelicula</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'peliculas_totales' %}">Peliculas</a></li>
+            <li><a href="{% url 'crear_pelicula' %}">Crear Pelicula</a></li>
+            <li><a href="{% url 'opciones_peliculas' %}">Opciones peliculas</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <div class="formulario">
+        <h1>Modificar datos de la pelicula</h1>
+        <form action="{% url 'modificar_pelicula' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="hidden" name="id_pelicula" value="{{ peliculas.id_pelicula }}">
+            <pre>Id pelicula:                    <input type="text" name="id_pelicula" value="{{ peliculas.id_pelicula }}" readonly></pre>
+            <pre>Titulo:                         <input type="text" name="titulo" value="{{ peliculas.titulo }}"></pre>
+            <pre>Precio:                         <input type="number" name="precio" value="{{ peliculas.precio }}"></pre>
+            <pre>Imagen:                         <input type="file" name="imagen" value="{{ peliculas.imagen }}"></pre>
+            {% if mensaje %}
+            <div>{{ mensaje }}</div>
+            {% endif %}
+            {% if peliculas %}
+            <input type="submit" name="opcion" value="Actualizar datos">
+        </form>
+        {% endif %}
+    </div>
+</body>

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Admin peliculas</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'peliculas_totales' %}">Peliculas</a></li>
+            <li><a href="{% url 'crear_pelicula' %}">Crear Pelicula</a></li>
+            <li><a href="{% url 'opciones_peliculas' %}">Opciones peliculas</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Peliculas</h1>
+    <table>
+        {% if peliculas %}
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+        </tr>
+        {% for p in peliculas %}
+        <tr>
+            <td>{{ p.id_pelicula }}</td>
+            <td>{{ p.titulo }}</td>
+            <td>{{ p.precio }}</td>
+            <td><img src="{{ MEDIA_URL }}{{ p.imagen.url }}"></td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+</body>

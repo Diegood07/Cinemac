@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Admin imagenes</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'imagenes_totales' %}">Todas las imagenes</a></li>
+            <li><a href="{% url 'subir_imagen' %}">Subir imagen</a></li>
+            <li><a href="{% url 'opciones_imagenes' %}">Opciones para las imagenes</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Imagenes</h1>
+    <table>
+        {% if imagen %}
+        <tr>
+            <th>ID</th>
+            <th>Imagen</th>
+            <th>Titulo imagen</th>
+            <th>Descripción imagen</th>
+        </tr>
+        {% for i in imagen %}
+        <tr>
+            <td>{{ i.id_imagen }}</td>
+            <td><img src="{{ MEDIA_URL }}{{ i.imagen.url }}"></td>
+            <td>{{ i.titulo }}</td>
+            <td>{{ i.descripcion_imagen }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+</body>

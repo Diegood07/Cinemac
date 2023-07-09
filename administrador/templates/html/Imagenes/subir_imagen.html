@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Subir Imagen</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'imagenes_totales' %}">Todas las imagenes</a></li>
+            <li><a href="{% url 'subir_imagen' %}">Subir imagen</a></li>
+            <li><a href="{% url 'opciones_imagenes' %}">Opciones para las imagenes</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Subir Imagen</h1>
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <pre>Imagen:            <input  for="imagen" type="file" name="imagen" accept="image/*" id="imagen" required></pre>
+        <pre>Titulo:       <input type="text" name="titulo_imagen" id="titulo_imagen" required><br></pre>
+        <pre>Descripción:       <input  for="descripcion_imagen" type="text" name="descripcion_imagen" id="descripcion_imagen" required><br></pre>
+        <div class="button-container">
+            <input type="submit" name="opcion" value="Agregar">
+        </div>
+    </form>
+</body>

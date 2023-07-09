@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/Logopag/test2.jpg' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <script src="app.js" async></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <title>CineMac</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">CineMac</h2>
+            <nav>
+                <a href="{% url 'index' %}">Inicio</a>
+                <a href="{% url 'cartelera' %}">Cartelera</a>
+                <a href="{% url 'preventas' %}" class="activo">Preventas</a>
+                <a href="{% url 'mas_visto' %}">Lo Más Visto</a>
+                <a href="{% url 'login' %}">Iniciar Sesión</a>
+            </nav>
+		</div>
+	</header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">SUGA AGUST D TOUR D-DAY IN JAPAN</span>
+                <img src="{% static 'img/Preventas/preventa1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=fxuR4CDuFk8">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">LA SIRENITA: LA PELÍCULA</span>
+                <img src="{% static 'img/Preventas/preventa2.jpeg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=8LECfkm4fJA">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">TXT WORLD TOUR ACT: SWEET MIRAGE IN L.A.</span>
+                <img src="{% static 'img/Preventas/preventa3.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=l5qNCNFB9mE">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">ROGER WATERS - EN VIVO DESDE PRAGA</span>
+                <img src="{% static 'img/Preventas/preventa4.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=wjoafyDA8Q4">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">RAPIDOS Y FURIOSOS X</span>
+                <img src="{% static 'img/Preventas/preventa5.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=4TOpS3cdb3c">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">CRIA SINIESTRA</span>
+                <img src="{% static 'img/Preventas/preventa6.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=fikvN7u8Zwc">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">GRAVEDAD</span>
+                <img src="{% static 'img/Preventas/preventa7.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=8WzkshbLHiM&t=2s">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">DEMONIO NEGRO</span>
+                <img src="{% static 'img/Preventas/preventa8.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=LP-4poTfRQ4">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">PROYECTO FANTASMA</span>
+                <img src="{% static 'img/Preventas/preventa9.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="https://www.youtube.com/watch?v=R7QBysJcLKQ">
+                    <button style="width: 150px; height: 40px;" class="botonpelicula3" >Ver Trailer</button>
+                </a>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="Piedepagina" >
+        <div class="grupo1">
+          <div class="box">
+            <figure>
+              <a href="{% url 'index' %}">
+                <img src="{% static 'img/Logopag/Logo.png' %}" alt="Logo de la pagina">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos una empresa de cine que recién está surgiendo</p>
+            <p>Nuestro objetivo es dar a las personas las mejores películas con mayor calidad </p>
+          </div>
+          <div class="box">
+            <h2>SÍGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.instagram.com/" class="bi bi-instagram" target="_blank">
+                    <img src="{% static 'img/Redes_Sociales/instagramlogodef.png' %}" width="45" height="45" alt="">
+                  </a>
+                  <a href="https://es-la.facebook.com/" class="bi bi-facebook" target="_blank">
+                    <img src="{% static 'img/Redes_Sociales/Facebook_logo_(square).png' %}" width="45" height="45" alt="">
+                  </a>
+                  <a href="https://twitter.com/?lang=es" class="bi bi-twitter" target="_blank">
+                    <img src="{% static 'img/Redes_Sociales/twitter-logo-4.png' %}" width="45" height="45" alt="">
+                  </a>
+                  <a href="https://www.youtube.com/" class="bi bi-youtube" target="_blank">
+                    <img src="{% static 'img/Redes_Sociales/Youtube_logo.png' %}" width="45" height="45" alt="">
+                  </a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo2">
+          <small>&copy; 2023 <b>CINEMAC</b> - Todos los Derechos Reservados.</small>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+      
+</body>
+</html>

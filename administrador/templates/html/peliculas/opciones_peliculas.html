@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Administración peliculas</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'peliculas_totales' %}">Peliculas</a></li>
+            <li><a href="{% url 'crear_pelicula' %}">Crear Pelicula</a></li>
+            <li><a href="{% url 'opciones_peliculas' %}">Opciones peliculas</a></li>
+            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+        </ul>
+    </nav>
+    <h1>Panel de Administración de peliculas</h1>
+    <table>
+        {% if peliculas %}
+        <th>ID</th>
+        <th>TITULO</th>
+        <th>PRECIO</th>
+        <th>IMAGEN</th>
+        <th>MODIFICAR</th>
+        <th>ELIMINAR</th>
+        {% for p in peliculas %}
+            <tr>
+                <td>{{p.id_pelicula}}</td>
+                <td>{{p.titulo}}</td>
+                <td>{{p.precio}}</td>
+                <td><img src="{{ MEDIA_URL }}{{ p.imagen.url }}"></td>
+                <td><a href="{% url 'encontrar_pelicula' pk=p.id_pelicula %}"class="btm-Modificar">Modificar</a></td>
+                <td><a href="{% url 'eliminar_pelicula'  pk=p.id_pelicula %}"class="btm-Eliminar">Eliminar</a></td>
+            </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+    <div id="idMensaje">
+        {% if mensaje %}
+            {{mensaje}}
+        {% endif %}
+    </div>
+</body>

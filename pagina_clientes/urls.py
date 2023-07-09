@@ -10,4 +10,5 @@ urlpatterns = [
     path('html/preventas/',views.preventas,name='preventas'),
     path('html/signup/',views.signup,name='signup'),
     path('html/inicio/',views.inicio,name='inicio'),
+    path('html/formulario/',views.formulario,name='formulario'),
 ]

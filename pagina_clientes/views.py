@@ -1,6 +1,8 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, login
 from .models import Usuario
+from django.shortcuts import redirect
+
 
 # Create your views here.
 
@@ -12,6 +14,9 @@ def cartelera(request):
 
 def inicio(request):
     return render(request,'html/inicio.html')
+
+def formulario(request):
+    return render(request,'html/formulario.html')
 
 def login(request):
     if request.method == "POST":

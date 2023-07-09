@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Películas</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pagina de Peliculas</h1>
+        <div class="options">
+            <a href="{% url 'index' %}">Opcion 1</a>
+            <a href="{% url 'panel_administracion' %}">Opcion 2</a>
+        </div>
+    </div>
+</body>
+</html>

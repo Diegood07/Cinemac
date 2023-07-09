@@ -10,6 +10,9 @@ def index(request):
 def cartelera(request):
     return render(request,'html/cartelera.html')
 
+def inicio(request):
+    return render(request,'html/inicio.html')
+
 def login(request):
     if request.method == "POST":
         correo_usuario = request.POST.get("email")

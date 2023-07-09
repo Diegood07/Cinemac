@@ -14,6 +14,13 @@ header {
     background-color: black;
 }
 
+header .headerPreventas{
+    header {
+	padding: 30px 0;
+    background-color: black;
+    }
+}
+
 header .contenedor_nav {
 	display: flex;
 	justify-content: space-between;
@@ -47,7 +54,6 @@ header nav a.activo {
     border-radius: 10px;
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
-    background-color: blue;
 }
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
@@ -61,8 +67,8 @@ header nav a.activo {
     transition: .3s;
 }
 .contenedor .contenedor-items .item{
-    height: 475px;
-    width: 475px;
+    height: 480px;
+    width: 480px;
     background-color: rgb(237, 219, 219);
     max-width: 200px;
     margin: auto;

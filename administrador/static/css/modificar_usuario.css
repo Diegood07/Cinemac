@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos de la barra de navegación */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos del formulario */
+  .formulario {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .formulario h1 {
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .formulario pre {
+    margin: 10px 0;
+  }
+  
+  .formulario input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .formulario input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ff5722; /* Cambia el color del botón aquí */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos responsivos */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  

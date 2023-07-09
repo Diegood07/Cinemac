@@ -102,6 +102,7 @@ header nav a.activo {
 }
 /* seccion carrito */
 .carrito{
+    background-color: #efefef;
     border: 1px solid #666;
     width: 35%;
     margin-top: 30px;

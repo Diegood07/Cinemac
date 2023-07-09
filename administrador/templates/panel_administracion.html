@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{% static 'css/panel_administracion.css' %}">
     <title>Panel de administrador</title>
 </head>
 <body>
@@ -16,6 +16,7 @@
             <li><a href="{% url 'imagenes_totales' %}">Imagenes</a></li>
         </ul>
     </nav>
-    <h1 style="text-align: center;">Pagina de administrador principal</h1>
+    <h1 style="text-align: center;" data-text="Página de administrador principal"></h1>
+    <img src="{% static 'img/panel_administracion.jpg' %}" alt="Imagen 3D">
 </body>
 </html>

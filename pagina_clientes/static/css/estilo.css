@@ -61,8 +61,8 @@ header nav a.activo {
     transition: .3s;
 }
 .contenedor .contenedor-items .item{
-    height: 480px;
-    width: 480px;
+    height: 475px;
+    width: 475px;
     background-color: rgb(237, 219, 219);
     max-width: 200px;
     margin: auto;

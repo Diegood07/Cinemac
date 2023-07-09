@@ -23,10 +23,11 @@ h1 {
 
 .options {
     margin-top: 20px;
+    
 }
 
 .options a {
-    display: inline-block;
+    display: inline-flex;
     margin: 10px;
     padding: 10px 20px;
     background-color: #fff;

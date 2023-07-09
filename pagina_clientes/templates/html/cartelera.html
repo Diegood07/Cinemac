@@ -35,42 +35,6 @@
   <section class="contenedor">
     <!-- Contenedor de elementos -->
     <div class="contenedor-items">
-      <div class="item">
-        <span class="titulo-item">Ant Man: Quantumania</span>
-        <img src="{% static 'img/Cartelera/pelicula (1).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
-        <button class="boton-item">Agregar al Carrito</button>
-        <div class="contenido-adicional" style="display: none;">
-          <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2023 </p> <br>
-          <p>Género: Acción, aventura, comedia</p> <br>
-          <p>Sinopsis: Esta será la tercera entrega de la franquicia de Ant-Man de Marvel. La película continuará
-            siguiendo las aventuras de Scott Lang (interpretado por Paul Rudd) como Ant-Man y Hope van Dyne
-            (interpretada por Evangeline Lilly) como Wasp. La trama exacta aún no se ha revelado, pero se espera que
-            incluya viajes en el tiempo y exploración del Reino Cuántico</p> <br>
-        </div>
-        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
-        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
-      </div>
-
-      <div class="item">
-        <span class="titulo-item">Avatar 2</span>
-        <img src="{% static 'img/Cartelera/pelicula (2).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
-        <button class="boton-item">Agregar al Carrito</button>
-        <div class="contenido-adicional" style="display: none;">
-          <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Ciencia ficción, aventura, acción</p><br>
-          <p>Sinopsis: "Avatar 2" es la secuela muy esperada de la exitosa película "Avatar" dirigida por James Cameron.
-            La historia se desarrollará en Pandora varios años después de los eventos de la primera película. Se
-            explorarán nuevas regiones de Pandora y se continuará la historia de Jake Sully (interpretado por Sam
-            Worthington) y Neytiri (interpretada por Zoe Saldana) mientras se enfrentan a nuevas amenazas y desafíos</p>
-          <br>
-        </div>
-        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
-        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
-      </div>
       {% block content %}
       {% for n in pelis %}
       <div class="item">
@@ -93,18 +57,52 @@
       {% endblock %}
 
 
+
+
+
+
+
       <div class="item">
-        <span class="titulo-item">El Gato Con Botas: El Último Deseo</span>
-        <img src="{% static 'img/Cartelera/pelicula (4).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
+        <span class="titulo-item">ELEMENTOS</span>
+        <img src="{% static 'img/Cartelera/elementos.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$5.300</span>
         <button class="boton-item">Agregar al Carrito</button>
         <div class="contenido-adicional" style="display: none;">
           <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Animación, aventura, comedia</p><br>
-          <p>Sinopsis: Esta película será una secuela del popular personaje de "Shrek", el Gato con Botas. La historia
-            seguirá las nuevas aventuras del Gato con Botas mientras se embarca en una búsqueda para encontrar el último
-            deseo de un misterioso pez mágico. El gato se enfrentará a desafíos y enemigos peligrosos en su viaje</p>
+          <p>Actores: Leah Lewis, Mamoudou Athie, Ronnie Del Carmen</p> <br>
+          <p>Directores: Peter Sohn</p> <br>
+          <p>Sinopsis: ELEMENTOS es el nuevo largometraje original de Disney y Pixar ambientado en Ciudad. Elementos, en donde conviven residentes de fuego, agua, tierra y aire. La historia presenta a Ember, una joven fogosa, inteligente y con un gran sentido del humor, cuya amistad con Wade, un joven divertido, sentimental y que se deja llevar por la corriente, pone en tela de juicio sus convicciones con relación al mundo en el que viven y a la persona que ella quiere ser.</p> <br>
+        </div>
+        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
+        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
+      </div>
+
+      <div class="item">
+        <span class="titulo-item">FLASH</span>
+        <img src="{% static 'img/Cartelera/flash.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$6.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+        <div class="contenido-adicional" style="display: none;">
+          <!-- Contenido adicional oculto -->
+          <p>Actores: Michael Keaton, Ezra Miller, Ben Affleck, Kiersey Clemons </p> <br>
+          <p>Directores: Andy Muschietti </p> <br>
+          <p>Sinopsis: Los mundos chocan en " Flash" cuando Barry utiliza sus superpoderes para viajar en el tiempo con el fin de cambiar los acontecimientos del pasado. Pero cuando su intento de salvar a su familia altera inadvertidamente el futuro, Barry queda atrapado en una realidad en la que el General Zod ha regresado, amenazando con la aniquilación, y no hay superhéroes a quien recurrir. A menos que Barry consiga sacar de su retiro a un Batman muy diferente y rescatar a un kriptoniano encarcelado... aunque no sea el que está buscando. En última instancia, para salvar el mundo en el que se encuentra y volver al futuro que conoce, la única esperanza de Barry es correr por su vida. Pero, ¿bastará con hacer el sacrificio definitivo para reiniciar el universo? </p> <br>
+          <br>
+        </div>
+        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
+        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
+      </div>
+
+      <div class="item">
+        <span class="titulo-item">GUARDIANES DE LA GALAXIA VOL.3</span>
+        <img src="{% static 'img/Cartelera/guardianes.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$4.900</span>
+        <button class="boton-item">Agregar al Carrito</button>
+        <div class="contenido-adicional" style="display: none;">
+          <!-- Contenido adicional oculto -->
+          <p>Actores: Dave Bautista, Chris Pratt, Zoe Saldana </p> <br>
+          <p>Directores: James Gunn </p> <br>
+          <p>Sinopsis: En GUARDIANES DE LA GALAXIA VOL. 3 de Marvel Studios, la querida banda de Guardianes se instala en Knowhere. Pero sus vidas no tardan en verse alteradas por los ecos del turbulento pasado de Rocket. Peter Quill, aún conmocionado por la pérdida de Gamora, debe reunir a su equipo en una peligrosa misión para salvar la vida de Rocket, una misión que, si no se completa con éxito, podría muy posiblemente conducir al final de los Guardianes tal y como los conocemos. </p> <br>
           <br>
         </div>
         <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
@@ -113,38 +111,30 @@
 
 
       <div class="item">
-        <span class="titulo-item">John Wick 4</span>
-        <img src="{% static 'img/Cartelera/pelicula (5).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
+        <span class="titulo-item">INDIANA JONES Y EL DIAL DEL DESTINO</span>
+        <img src="{% static 'img/Cartelera/INDIANA.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$6.000</span>
         <button class="boton-item">Agregar al Carrito</button>
         <div class="contenido-adicional" style="display: none;">
           <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2023</p><br>
-          <p>Género: Acción, thriller</p><br>
-          <p>Sinopsis: "John Wick 4" será la cuarta entrega de la exitosa franquicia de acción protagonizada por Keanu
-            Reeves. La historia continuará siguiendo al legendario asesino John Wick mientras se enfrenta a nuevos
-            enemigos y desafíos mortales. La trama exacta de esta entrega aún no se ha revelado</p><br>
+          <p>Actores: Boyd Holbrook, Harrison Ford, Mads Mikkelsen </p> <br>
+          <p>Directores: James Mangold </p> <br>
+          <p>Sinopsis: Harrison Ford regresa en el papel del legendario héroe arqueólogo para esta quinta entrega de la icónica franquicia. Junto a Ford actúan Phoebe Waller-Bridge (Fleabag), Antonio Banderas (Dolor y gloria), John Rhys-Davies (Indiana Jones y los cazadores del arca perdida), Shaunette Renee Wilson (PANTERA NEGRA), Thomas Kretschmann (Das Boot), Toby Jones (Jurassic World: El reino caído), Boyd Holbrook (LOGAN), Olivier Richters (BLACK WIDOW), Ethann Isidore (Mortel) y Mads Mikkelsen (Animales fantásticos: Los secretos de Dumbledore). Dirigida por James Mangold (CONTRA LO IMPOSIBLE, LOGAN), la película está producida por Kathleen Kennedy, Frank Marshall y Simon Emanuel, con Steven Spielberg y George Lucas como productores ejecutivos. John Williams, quien ha puesto música a todas las aventuras de Indy desde la original Indiana Jones y los cazadores del arca perdida de 1981, vuelve a componer la banda sonora. </p> <br>
+          <br>
         </div>
         <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
         <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
       </div>
 
       <div class="item">
-        <span class="titulo-item">M3gan</span>
-        <img src="{% static 'img/Cartelera/pelicula (6).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
+        <span class="titulo-item">KRAKENS Y SIRENAS: CONOCE A LOS GILLMAN</span>
+        <img src="{% static 'img/Cartelera/KRAKENS.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$6.000</span>
         <button class="boton-item">Agregar al Carrito</button>
         <div class="contenido-adicional" style="display: none;">
           <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Terror/Ciencia ficción</p><br>
-          <p>Sinopsis: M3GAN es una maravilla de la inteligencia artificial, una muñeca realista programada para ser la
-            mejor compañera de los niños y la mayor aliada de los padres. Diseñada por Gemma, M3GAN es capaz de
-            escuchar, observar y aprender mientras se convierte en amiga, profesora, compañera de juegos y protectora
-            del niño al que se vincule. Cuando, inesperadamente, Gemma se convierte en la tutora legal de Cady, su
-            sobrina huérfana de 9 años, no sabe muy bien qué hacer ni se siente preparada para ejercer de madre.
-            Sometida a un intenso estrés laboral, Gemma decide vincular su prototipo de M3GAN a Cady en un intento de
-            resolver ambos problemas, pero no tardará en descubrir las inimaginables consecuencias de su decisión</p>
+          <p>Directores: Kirk DeMicco </p> <br>
+          <p>Sinopsis: La dulce y tímida Ruby Gillman de 16 años, está desesperada por encajar en la escuela Oceanside High, pero la mayoría de las veces se siente invisible. Ruby es la tutora de matemáticas de su crush, que es un chico skater que sólo parece admirarla por sus fractales, y se le impide salir con los chicos más cool de la playa porque su supermamá sobreprotectora, le ha prohibido a Ruby meterse en el agua. Pero cuando rompe la regla #1 de su madre, Ruby descubrirá que es descendiente directa de las reinas guerreras Kraken y está destinada a heredar el trono de su abuela, la Reina Guerrera de los Siete Mares. Los Kraken han jurado proteger los océanos del mundo contra las sirenas vanidosas y sedientas de poder que llevan siglos luchando entre sí. Hay un gran problema con eso: la hermosa y popular chica nueva de la escuela, Chelsea resulta ser una sirena. Sin embargo, Ruby tendrá que aceptar quién es y hacer lo que sea para proteger a los que más quiere. </p> <br>
           <br>
         </div>
         <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
@@ -153,89 +143,15 @@
 
 
       <div class="item">
-        <span class="titulo-item">Scream 6</span>
-        <img src="{% static 'img/Cartelera/pelicula (7).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
+        <span class="titulo-item">LA NOCHE DEL DEMONIO: LA PUERTA ROJA</span>
+        <img src="{% static 'img/Cartelera/lanochedeldemonio.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$6.300</span>
         <button class="boton-item">Agregar al Carrito</button>
         <div class="contenido-adicional" style="display: none;">
           <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Terror, misterio</p><br>
-          <p>Sinopsis: "Scream 6" es la sexta entrega de la exitosa franquicia de películas de terror "Scream". La
-            historia seguirá a un nuevo grupo de personajes mientras son perseguidos y acosados por un asesino
-            enmascarado conocido como Ghostface. La trama exacta aún no se ha revelado</p><br>
-        </div>
-        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
-        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
-      </div>
-
-
-      <div class="item">
-        <span class="titulo-item">Shazam</span>
-        <img src="{% static 'img/Cartelera/pelicula (8).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
-        <button class="boton-item">Agregar al Carrito</button>
-        <div class="contenido-adicional" style="display: none;">
-          <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2019</p><br>
-          <p>Género: Acción, aventura, comedia</p><br>
-          <p>Sinopsis: La película sigue a un joven llamado Billy Batson (interpretado por Asher Angel) que obtiene el
-            poder de transformarse en un superhéroe adulto con habilidades extraordinarias (interpretado por Zachary
-            Levi) al pronunciar la palabra "Shazam". Billy debe aprender a controlar sus nuevos poderes mientras
-            enfrenta una amenaza mortal</p><br>
-        </div>
-        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
-        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
-      </div>
-
-
-      <div class="item">
-        <span class="titulo-item">Sin Novedad En El Frente</span>
-        <img src="{% static 'img/Cartelera/pelicula (9).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
-        <button class="boton-item">Agregar al Carrito</button>
-        <div class="contenido-adicional" style="display: none;">
-          <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022.</p><br>
-          <p>Género: Bélico/Acción</p><br>
-          <p>Sinopsis: Basada en la novela de Erich Maria Remarque, la película sigue a un grupo de jóvenes soldados
-            alemanes durante la Primera Guerra Mundial. Explora los horrores y la brutalidad de la guerra, así como los
-            efectos devastadores que tiene en la juventud y la humanidad de los soldados</p><br>
-        </div>
-        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
-        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
-      </div>
-
-
-      <div class="item">
-        <span class="titulo-item">Terrifier 2</span>
-        <img src="{% static 'img/Cartelera/pelicula (10).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
-        <button class="boton-item">Agregar al Carrito</button>
-        <div class="contenido-adicional" style="display: none;">
-          <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Terror</p><br>
-          <p>Sinopsis: "Terrifier 2" es la secuela de la película de terror "Terrifier". La historia continúa siguiendo
-            a Art the Clown, un asesino psicótico y aterrador, mientras aterroriza a nuevas víctimas con su siniestra
-            diversión. La trama exacta aún no se ha revelado</p><br>
-        </div>
-        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
-        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
-      </div>
-
-
-      <div class="item">
-        <span class="titulo-item">The Whale</span>
-        <img src="{% static 'img/Cartelera/pelicula (11).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
-        <button class="boton-item">Agregar al Carrito</button>
-        <div class="contenido-adicional" style="display: none;">
-          <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Drama/Ficción</p><br>
-          <p>Sinopsis: The Whale aborda la vida de Charlie, un profesor de inglés con severos problemas de obesidad, que
-            intenta reconectar con su hija adolescente en búsqueda de una última oportunidad de redimirse como padre</p>
+          <p>Actores: Patrick Wilson, Rose Byrne, Ty Simpkins, Andrew Astor </p> <br>
+          <p>Directores: Patrick Wilson </p> <br>
+          <p>Sinopsis: En La Noche del Demonio: La puerta roja, el reparto original de la franquicia de terror regresa para el capítulo final de la terrorífica saga de la familia Lambert. Para acabar con sus demonios de una vez por todas, Josh (Patrick Wilson) y un Dalton en edad universitaria (Ty Simpkins) deben adentrarse más que nunca en El Más Allá, enfrentándose al oscuro pasado de su familia y a una serie de nuevos y más horripilantes temores que acechan tras la puerta roja. </p> <br>
           <br>
         </div>
         <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
@@ -244,16 +160,67 @@
 
 
       <div class="item">
-        <span class="titulo-item">Winnie The Pooh: Blood And Honey</span>
-        <img src="{% static 'img/Cartelera/pelicula (12).jpg' %}" alt="" class="img-item">
-        <span class="precio-item">$4.000</span>
+        <span class="titulo-item">LA SIRENITA</span>
+        <img src="{% static 'img/Cartelera/sinegrita.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$5.000</span>
         <button class="boton-item">Agregar al Carrito</button>
         <div class="contenido-adicional" style="display: none;">
           <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2023</p><br>
-          <p>Género: Terror/Slasher</p><br>
-          <p>Sinopsis: Ahora asilvestrados y sedientos de sangre, Winnie the Pooh y Piglet aterrorizan a Christopher
-            Robin y a un grupo de jóvenes en una casa remota.</p><br>
+          <p>Actores: Halle Bailey, Jonah Hauer-King, Melissa McCarthy </p> <br>
+          <p>Directores: Rob Marshall </p> <br>
+          <p>Sinopsis: LA SIRENITA es la querida historia de Ariel, una sirena joven y apasionada con ansias de aventuras. Ella es la más joven y rebelde de las hijas del rey Tritón, y sueña con descubrir el mundo más allá del mar. Mientras visita la superficie, se enamora del distinguido príncipe Eric, y aunque las sirenas tienen prohibido relacionarse con los humanos, Ariel debe seguir a su corazón. Así es como hace un trato con la malvada bruja del mar, Úrsula, que le da la oportunidad de experimentar la vida sobre la tierra, pero finalmente pone su vida, y la corona de su padre, en peligro. </p> <br>
+          <br>
+        </div>
+        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
+        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
+      </div>
+
+
+      <div class="item">
+        <span class="titulo-item">RAPIDOS Y FURIOSOS X</span>
+        <img src="{% static 'img/Cartelera/familia.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$5.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+        <div class="contenido-adicional" style="display: none;">
+          <!-- Contenido adicional oculto -->
+          <p>Actores: Jordana Brewster, Michelle Rodriguez, Vin Diesel </p> <br>
+          <p>Directores: Louis Leterrier </p> <br>
+          <p>Sinopsis: La décima película de la saga Rápidos y Furiosos, es el capítulo final de una de las franquicias más populares y queridas del cine, ahora en su tercera década y continuando con el mismo elenco y personajes que cuando comenzó. A través de varias misiones y contra lo imposible, Dom Toretto (Vin Diesel) y su familia han sido más astutos y más rápidos que todos los enemigos que se le han cruzado en su camino. Ahora se enfrentan a su enemigo más letal: una amenaza aterradora que surge de las sombras del pasado que está alimentado de una venganza sangrienta, y está decidido a destruir a su familia y destruir todo, y a cualquier persona, A los que Dom ama. </p> <br>
+          <br>
+        </div>
+        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
+        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
+      </div>
+
+
+      <div class="item">
+        <span class="titulo-item">SPIDER-MAN A TRAVES DEL SPIDER-VERSO</span>
+        <img src="{% static 'img/Cartelera/spiderman.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$5.600</span>
+        <button class="boton-item">Agregar al Carrito</button>
+        <div class="contenido-adicional" style="display: none;">
+          <!-- Contenido adicional oculto -->
+          <p>Actores: Shameik Moore, Hailee Steinfeld, Oscar Isaac </p> <br>
+          <p>Directores: Kemp Powers, Justin K. Thompson, Joaquim Dos Santos </p> <br>
+          <p>Sinopsis: Miles Morales regresa en la próxima entrega de la saga ganadora del Oscar® Spider-Verso, una aventura épica que transportará al amigable vecino de Brooklyn Spider-Man a través del Multiverso para unir fuerzas con Gwen Stacy y un nuevo equipo de Spider-Personas, y enfrentarse así a un villano mucho más poderoso que cualquier cosa que hayan conocido antes. </p> <br>
+          <br>
+        </div>
+        <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
+        <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
+      </div>
+
+
+      <div class="item">
+        <span class="titulo-item">TRANSFORMERS: EL DESPERTAR DE LAS BESTIAS</span>
+        <img src="{% static 'img/Cartelera/transformers.jpg' %}" alt="" class="img-item">
+        <span class="precio-item">$6.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+        <div class="contenido-adicional" style="display: none;">
+          <!-- Contenido adicional oculto -->
+          <p>Actores: Peter Cullen </p> <br>
+          <p>Directores: Steven Caple Jr. </p> <br>
+          <p>Sinopsis: Volviendo a la acción y el espectáculo que han cautivado a los cinéfilos de todo el mundo, Transformers: El Despertar De Las Bestias regresa con una aventura trotamundos en la década de 1990 con los Autobots e introducirá una nueva generación de Transformers: los Maximals, quienes se unirán a la batalla que está ocurriendo en la tierra entre Autobots y Decepticons. </p> <br>
+          <br>
         </div>
         <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
         <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>

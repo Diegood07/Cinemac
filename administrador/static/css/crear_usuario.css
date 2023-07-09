@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.formulario {
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+pre {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#idMensaje {
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Estilos específicos para el tema de cine */
+body {
+  background-image: url('path/a/tu/imagen-de-fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background-color: #000;
+}
+
+nav ul li a {
+  font-size: 18px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+}
+
+.formulario {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #36f48f;
+}
+
+#idMensaje {
+  color: #f44336;
+}

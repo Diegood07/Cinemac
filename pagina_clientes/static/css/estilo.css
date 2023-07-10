@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 :root {
 	--rojo: #E50914;
+    --fondo: #141414;
 }
 
+body {
+    background: var(--fondo);
+}
 
 .contenedor_nav {
 	width: 90%;
@@ -12,13 +16,6 @@
 header {
 	padding: 30px 0;
     background-color: black;
-}
-
-header .headerPreventas{
-    header {
-	padding: 30px 0;
-    background-color: black;
-    }
 }
 
 header .contenedor_nav {
@@ -55,6 +52,7 @@ header nav a.activo {
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
 }
+
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
     margin-top: 30px;

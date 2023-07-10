@@ -44,7 +44,7 @@ function ready(){
 
 //funcion que redirecciona al formulario
 function redireccionar() {
-    window.location.href = "formulario_ventas/index.html";
+    window.location.href = "/html/formulario";
   }
 
 //Eliminamos todos los elementos del carrito y lo ocultamos

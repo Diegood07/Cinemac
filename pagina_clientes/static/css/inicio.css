@@ -14,6 +14,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation-name: anim;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 h1 {
@@ -40,4 +43,13 @@ h1 {
 .options a:hover {
     background-color: #000;
     color: #fff;
+}
+
+
+@keyframes anim{
+    0% {background-color: rgb(0, 38, 255);}
+   25% {background-color: rgb(226, 17, 17);} 
+   50% {background-color: #1cd434;} 
+   75% {background-color: rgb(192, 18, 207);} 
+  100% {background-color: rgb(213, 250, 2);} 
 }

@@ -1,24 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 :root {
 	--rojo: #E50914;
-    --fondo: #141414;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background: var(--fondo);
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
 }
 
-.contenedor_nav {
+.contenedor1 {
 	width: 90%;
 	margin: auto;
 }
 
 header {
 	padding: 30px 0;
-    background-color: black;
 }
 
-header .contenedor_nav {
+header .contenedor1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -51,6 +56,7 @@ header nav a.activo {
     border-radius: 10px;
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
+    background-color: red;
 }
 
 /* SECCION CONTENEDOR DE ITEMS */
@@ -106,7 +112,7 @@ header nav a.activo {
     border-radius: 5px;
     cursor: pointer;
 }
-/* seccion carrito */
+
 .carrito{
     background-color: #efefef;
     border: 1px solid #666;
@@ -226,27 +232,6 @@ header nav a.activo {
     scale: 1.05;
 }
 
-/* SECCION RESPONSIVE */
-@media screen and (max-width: 850px) {
-    .contenedor {
-      display: block;
-    }
-    .contenedor-items{
-        width: 100% !important;
-    }
-    .carrito{
-        width: 100%;
-    }
-  }
-
-
-  
-
-
-
-
-
-
 
 /* Fondo Footer */
 .Piedepagina {
@@ -286,10 +271,6 @@ header nav a.activo {
     color: #efefef;
     margin-bottom: 10px;
 }
-
-
-
-
 
 footer {
     background-color: #f2f2f2;
@@ -339,8 +320,6 @@ footer {
     font-size: 15px;
 }
 
-
-/* Responsive Footer */
 @media screen and (max-width:800px) {
     .Piedepagina .grupo1 {
         width: 90%;
@@ -350,166 +329,26 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*ESTILO DE PREVENTAS*/
-:root {
-	--rojo: #E50914;
-	--fondo: #f8f4f4;
+@media screen and (max-width: 850px) {
+    .contenedor {
+      display: block;
+    }
+    .contenedor-items{
+        width: 100% !important;
+    }
+    .carrito{
+        width: 100%;
+    }
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background-color: rgb(237, 219, 219);
-	font-family: 'Open Sans', sans-serif;
-}
-
-.contenedor {
-	width: 90%;
-	margin: auto;
-}
-
-header {
-	padding: 30px 0;
-}
-
-header .contenedor {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header .logotipo {
-	font-family: 'Bebas Neue', cursive;
-	font-weight: normal;
-	color: var(--rojo);
-	font-size: 40px;
-}
-
-header nav a {
-	color: #AAA;
-	text-decoration: none;
-	margin-right: 20px;
-}
-
-header nav a:hover,
-header nav a.activo {
-	color: #FFF;
-}
-
-.botonpelicula3 {
-    border-radius: 10px;
-    border: 2px solid;
-}
-
-.botonpelicula3:hover{ /*Cambiar color del botón al pasar el mouse*/
-    background-color: #E50914;
-
-}
-
-/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
-.pelicula-principal {
-	font-size: 16px;
-	min-height: 40.62em;
-	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
-	background-position: center center;
-	background-size: cover;
-	margin-bottom: 3.12em;
-	display: flex;
-	align-items: end;
-}
-
-.pelicula-principal .contenedor {
-	margin: 0 auto;
-	margin-bottom: 6.25em;
-}
-
-.pelicula-principal .titulo {
-	font-weight: 600;
-	font-size: 3.12em;
-	margin-bottom: 0.4em;
-}
-
-.pelicula-principal .descripcion {
-	font-weight: normal;
-	font-size: 1em;
-	line-height: 1.75em;
-	max-width: 50%;
-	margin-bottom: 1.25em;
-}
-
-.pelicula-principal .boton {
-	background: rgba(0,0,0, 0.5);
-	border: none;
-	border-radius: 0.31em;
-	padding: 0.93em 1.87em;
-	color: #fff;
-	margin-right: 1.25em;
-	cursor: pointer;
-	transition: .3s ease all;
-	font-size: 1.12em;
-}
-
-.pelicula-principal .boton:hover {
-	background: #fff;
-	color: #000;
-}
-
-.pelicula-principal .boton i {
-	margin-right: 1.25em;
-}
-
-/* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
 	header .logotipo {
 		margin-bottom: 10px;
 		font-size: 30px;
 	}
 
-	header .contenedor {
+	header .contenedor1 {
 		flex-direction: column;
 		text-align: center;
-	}
-
-	.pelicula-principal {
-		font-size: 14px;
-	}
-
-	.pelicula-principal .descripcion {
-		max-width: 100%;
 	}
 }

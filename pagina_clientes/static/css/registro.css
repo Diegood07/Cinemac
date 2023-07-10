@@ -23,7 +23,9 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 1em;
-    background-color: red;
+    animation-name: anim;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 section h1{
@@ -44,6 +46,7 @@ section form{
     max-width: 500px;
     border-radius: 20px;
     border: 2px solid rgba(0,0,0,.1);
+    background-color: grey;
 }
 
 section form label{
@@ -98,4 +101,12 @@ section button{
     border-radius: 9px;
     margin-top: 1.5em;
     font-size: 1em;
+}
+
+@keyframes anim{
+    0% {background-color: rgb(0, 38, 255);}
+   25% {background-color: rgb(226, 17, 17);} 
+   50% {background-color: #1cd434;} 
+   75% {background-color: rgb(192, 18, 207);} 
+  100% {background-color: rgb(213, 250, 2);} 
 }

@@ -1,87 +1,91 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  background-color: #000;
+  padding: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffbd2a;
+}
+
+h1 {
+  text-align: center;
+  color: #19bdcc;
+}
+
+
+/* Estilos de la tabla */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+table th {
+  background-color: #19bdcc;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+}
+
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Estilos de los enlaces para modificar y eliminar */
+.btm-Modificar{
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f4ff2a;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btm-Eliminar {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgb(255, 0, 0);
+  color: #fffbfb;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btm-Modificar:hover,
+.btm-Eliminar:hover {
+  background-color: #47ffce;
+}
   
-  h1 {
-    text-align: center;
-    color: #19bdcc;
-  }
   
-  /* Estilos de la barra de navegación */
-  nav {
-    background-color: #000;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #ffbd2a;
-  }
-  
-  /* Estilos de la tabla */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table th {
-    background-color: #19bdcc;
-    color: #000;
-    font-weight: bold;
-    padding: 10px;
-  }
-  
-  table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  /* Estilos de los enlaces para modificar y eliminar */
-  .btm-Modificar{
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: #f4ff2a;
-    color: #000;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .btm-Eliminar {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: rgb(255, 0, 0);
-    color: #fffbfb;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .btm-Modificar:hover,
-  .btm-Eliminar:hover {
-    background-color: #47ffce;
-  }
   

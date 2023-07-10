@@ -10,10 +10,10 @@
 <body>
     <nav>
         <ul>
-            <li><a href="{% url 'usuarios_totales' %}">Todos los usuarios</a></li>
-            <li><a href="{% url 'crear_usuario' %}">Crear usuario</a></li>
-            <li><a href="{% url 'opciones_usuarios' %}">Opciones para los usuarios</a></li>
-            <li><a href="{% url 'panel_administracion' %}">Panel de administración</a></li>
+            <li><a href="{% url 'usuarios_totales' %}" style="text-decoration: none;">Todos los usuarios</a></li>
+            <li><a href="{% url 'crear_usuario' %}" style="text-decoration: none;">Crear usuario</a></li>
+            <li><a href="{% url 'opciones_usuarios' %}" style="text-decoration: none;">Opciones para los usuarios</a></li>
+            <li class="right-corner" style="margin-left: auto;"><a href="{% url 'panel_administracion' %}" style="text-decoration: none;">Volver</a></li>
         </ul>
     </nav>
     <h1>Total de usuarios</h1>

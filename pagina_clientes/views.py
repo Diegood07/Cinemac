@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, login
 from .models import Usuario
+from administrador.models import Peliculas
 from django.shortcuts import redirect
 
 
@@ -10,7 +11,9 @@ def index(request):
     return render(request,'index.html')
 
 def cartelera(request):
-    return render(request,'html/cartelera.html')
+    peliculas=Peliculas.objects.all()
+    context={'peliculas':peliculas}
+    return render(request,'html/cartelera.html',context)
 
 def inicio(request):
     return render(request,'html/inicio.html')

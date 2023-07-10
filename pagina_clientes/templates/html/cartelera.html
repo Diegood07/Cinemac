@@ -35,26 +35,19 @@
   <section class="contenedor">
     <!-- Contenedor de elementos -->
     <div class="contenedor-items">
-      {% block content %}
-      {% for n in pelis %}
+      {% for n in peliculas %}
       <div class="item">
-        <span class="titulo-item">{{ n.nombre }}</span>
-        <img src="{{ n.imagen }}" alt="" class="img-item">
-        <span class="precio-item">{{ n.precio }}</span>
+        <span class="titulo-item">{{ n.titulo }}</span>
+        <img src="{{ MEDIA_URL }}{{ n.imagen.url }}" alt="" class="img-item">
+        <span class="precio-item">${{ n.precio }}</span>
         <button class="boton-item">Agregar al Carrito</button>
         <div class="contenido-adicional" style="display: none;">
           <!-- Contenido adicional oculto -->
-          <p>Año de lanzamiento: 2022</p><br>
-          <p>Género: Drama, deportes</p><br>
-          <p>Sinopsis: "Creed 3" será la tercera entrega de la franquicia "Creed", que se basa en el personaje de Rocky
-            Balboa (interpretado por Sylvester Stallone) y sigue la historia del boxeador Adonis Creed (interpretado por
-            Michael B. Jordan). La trama exacta de esta entrega aún no se ha revelado</p><br>
         </div>
         <button class="ver-mas" onclick="mostrarContenido(this)">Ver más</button>
         <button class="ver-menos" onclick="ocultarContenido(this)" style="display: none;">Ver menos</button>
       </div>
       {% endfor %}
-      {% endblock %}
 
 
 

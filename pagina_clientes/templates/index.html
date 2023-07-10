@@ -3,69 +3,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>CineMac</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-    <link rel="stylesheet" href="{% static 'img' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>CineMac</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+  <link rel="stylesheet" href="{% static 'img' %}">
 </head>
 
 <body>
   <header>
     <div class="contenedor">
       <h2 class="logotipo">CineMac</h2>
-        <nav>
-          <a href="{% url 'index' %}" class="activo">Inicio</a>
-          <a href="{% url 'cartelera' %}">Cartelera</a>
-          <a href="{% url 'preventas' %}">Preventas</a>
-          <a href="{% url 'mas_visto' %}">Lo Más Visto</a>
-          <a href="{% url 'login' %}">Cerrar Sesión</a>
-        </nav>
+      <nav>
+        <a href="{% url 'index' %}" class="activo">Inicio</a>
+        <a href="{% url 'cartelera' %}">Cartelera</a>
+        <a href="{% url 'preventas' %}">Preventas</a>
+        <a href="{% url 'mas_visto' %}">Lo Más Visto</a>
+        <a href="{% url 'login' %}">Cerrar Sesión</a>
+      </nav>
     </div>
   </header>
   <main>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/Gatoconbotasfondo.jpg' %}" class="d-block w-100" alt="..."></a>
+          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/Gatoconbotasfondo.jpg' %}"
+              class="d-block w-100" alt="..."></a>
         </div>
         <div class="carousel-item">
-          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/Johnwick4fondo.jpg' %}" class="d-block w-100" alt="..."></a>
+          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/Johnwick4fondo.jpg' %}"
+              class="d-block w-100" alt="..."></a>
         </div>
         <div class="carousel-item">
-          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/sinnovedadenelfrente.jpg' %}" class="d-block w-100" alt="..."></a>
+          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/sinnovedadenelfrente.jpg' %}"
+              class="d-block w-100" alt="..."></a>
         </div>
         <div class="carousel-item">
-          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/shazam2fondo.jpg' %}" class="d-block w-100" alt="..."></a>
+          <a href="{% url 'cartelera' %}"><img src="{% static 'img/Peliculas/shazam2fondo.jpg' %}" class="d-block w-100"
+              alt="..."></a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
     <div class="peliculas-recomendadas contenedor">
       <div class="contenedor-titulo-controles">
-          <h3>Películas Recomendadas</h3>
-          <div class="indicadores"></div>
+        <h3>Películas Recomendadas</h3>
+        <div class="indicadores"></div>
       </div>
       <div class="contenedor-principal">
-        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
-          class="fas fa-angle-left"></i></button>
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
 
         <div class="contenedor-carousel">
           <div class="carousel">
@@ -91,57 +100,57 @@
               <a href="{% url 'cartelera' %}"><img src="{% static 'img/7.png' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/1.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/antman.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/2.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/elementos.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/3.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/familia.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/1.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/flash.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/2.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/guardianes.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/3.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/indiana.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/4.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/krakens.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/5.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/lanochedeldemonio.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/6.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/sinegrita.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/7.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/spiderman.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/1.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/transformers.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/2.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/blue.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/3.png' %}" alt=""></a>
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/goonies.jpg' %}" alt=""></a>
             </div>
             <div class="pelicula">
-              <a href="{% url 'cartelera' %}"><img src="{% static 'img/4.png' %}" alt=""></a>
-            </div> 
+              <a href="{% url 'cartelera' %}"><img src="{% static 'img/Index/monstruo.jpg' %}" alt=""></a>
+            </div>
           </div>
           <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
         </div>
       </div>
-    </div>  
+    </div>
   </main>
-  
+
   <div id="peliculasenindex">
     <div id="ContenedorTitulo" style="text-align: center; padding-top: 20px; background-color: grey;">
-      <marquee scrollamount="15"> 
+      <marquee scrollamount="15">
         <h1>!NUESTRAS PELICULAS!</h1>
       </marquee>
     </div>
@@ -152,7 +161,7 @@
             <img src="{% static 'img/Cartelera/guardianes.jpg' %}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Guardianes de la galaxia</h5>
-              <a href="{% url 'cartelera' %}" class="btn btn-primary" style="center" target="_blank">Comprar</a>
+              <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
             </div>
           </div>
         </div>
@@ -161,16 +170,16 @@
             <img src="{% static 'img/Cartelera/indiana.jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">Indiana Jones</h5>
-                <a href="{% url 'cartelera' %}" class="btn btn-primary" style="center" target="_blank">Comprar</a>
+              <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
             </div>
           </div>
         </div>
         <div class="col-sm">
           <div class="card h-100 card-border mb-5 text-center">
-            <img src="{% static 'img/Cartelera/krakens.jpg' %}" class="card-img-top" alt="...">
+            <img src="{% static 'img/Cartelera/krakens.jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">Krakens y Sirenas</h5>
-                <a href="{% url 'cartelera' %}" class="btn btn-primary" style="center" target="_blank">Comprar</a>
+              <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
             </div>
           </div>
         </div>
@@ -180,66 +189,66 @@
         <div class="col-sm">
           <div class="card h-100 card-border mb-5 text-center">
             <img src="{% static 'img/Cartelera/lanochedeldemonio.jpg' %}" class="card-img-top" alt="...">
-              <h5 class="card-title">LA NOCHE DEL DEMONIO: La Puerta Roja</h5>
-              <a href="{% url 'cartelera' %}" class="btn btn-primary" style="center" target="_blank">Comprar</a>
+            <h5 class="card-title">LA NOCHE DEL DEMONIO: La Puerta Roja</h5>
+            <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <div class="col-sm">
-          <div class="card h-100 card-border mb-5 text-center" >
+          <div class="card h-100 card-border mb-5 text-center">
             <img src="{% static 'img/Cartelera/flash.jpg' %}" class="card-img-top" alt="">
-            <h5 class="card-title" >Flash</h5>
-            <a href="{% url 'cartelera' %}" class="btn btn-primary" style="center" target="_blank">Comprar</a>
+            <h5 class="card-title">Flash</h5>
+            <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <div class="col-sm">
           <div class="card h-100 card-border mb-5 text-center">
             <img src="{% static 'img/Cartelera/antman.jpg' %}" class="card-img-top" alt="...">
-              <h5 class="card-title">Ant-Man and the Wasp: Quantumania</h5>
-              <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
-            </div>
+            <h5 class="card-title">Ant-Man and the Wasp: Quantumania</h5>
+            <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
           </div>
         </div>
-      </div>
-      <div class="container-md p-5">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card h-100 card-border mb-5 text-center">
-              <img src="{% static 'img/Cartelera/familia.jpg' %}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Rapidos y Furiosos X</h5>
-                <a href="{% url 'cartelera' %}" class="btn btn-primary"  target="_blank">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card h-100 card-border mb-5 text-center">
-              <img src="{% static 'img/Cartelera/spiderman.jpg' %}" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Spider-Man: Across the Spider-Verse</h5>
-                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card h-100 card-border mb-5 text-center">
-              <img src="{% static 'img/Cartelera/sinegrita.jpg' %}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">La Sirenita</h5>
-                  <a href="{% url 'cartelera' %}" class="btn btn-primary" target="_blank">Comprar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
       </div>
     </div>
-  </div> 
+    <div class="container-md p-5">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card h-100 card-border mb-5 text-center">
+            <img src="{% static 'img/Cartelera/familia.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rapidos y Furiosos X</h5>
+              <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card h-100 card-border mb-5 text-center">
+            <img src="{% static 'img/Cartelera/spiderman.jpg' %}" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man: Across the Spider-Verse</h5>
+              <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card h-100 card-border mb-5 text-center">
+            <img src="{% static 'img/Cartelera/sinegrita.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">La Sirenita</h5>
+              <a href="{% url 'cartelera' %}" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  </div>
   <footer class="Piedepagina">
     <div class="grupo1">
       <div class="box">
-          <figure>
-            <img src="{% static 'img/Logopag/Logo.png' %}" alt="Logo de la pagina">
-          </figure>
+        <figure>
+          <img src="{% static 'img/Logopag/Logo.png' %}" alt="Logo de la pagina">
+        </figure>
       </div>
       <div class="box">
         <h2>SOBRE NOSOTROS</h2>
@@ -248,27 +257,30 @@
       </div>
       <div class="box">
         <h2>SÍGUENOS</h2>
-          <div class="red-social">
-            <a href="https://www.instagram.com/" class="bi bi-instagram" target="_blank">
-              <img src="{% static 'img/Redes_Sociales/instagramlogodef.png' %}" width="45" height="45" alt="">
-            </a>
-            <a href="https://es-la.facebook.com/" class="bi bi-facebook" target="_blank">
-              <img src="{% static 'img/Redes_Sociales/Facebook_logo_(square).png' %}" width="45" height="45" alt="">
-            </a>
-            <a href="https://twitter.com/?lang=es" class="bi bi-twitter" target="_blank">
-              <img src="{% static 'img/Redes_Sociales/twitter-logo-4.png' %}" width="45" height="45" alat="">
-            </a>
-            <a href="https://www.youtube.com/" class="bi bi-youtube" target="_blank">
-              <img src="{% static 'img/Redes_Sociales/Youtube_logo.png' %}" width="45" height="45" alt="">
-            </a>
-          </div>        
+        <div class="red-social">
+          <a href="https://www.instagram.com/" class="bi bi-instagram" target="_blank">
+            <img src="{% static 'img/Redes_Sociales/instagramlogodef.png' %}" width="45" height="45" alt="">
+          </a>
+          <a href="https://es-la.facebook.com/" class="bi bi-facebook" target="_blank">
+            <img src="{% static 'img/Redes_Sociales/Facebook_logo_(square).png' %}" width="45" height="45" alt="">
+          </a>
+          <a href="https://twitter.com/?lang=es" class="bi bi-twitter" target="_blank">
+            <img src="{% static 'img/Redes_Sociales/twitter-logo-4.png' %}" width="45" height="45" alat="">
+          </a>
+          <a href="https://www.youtube.com/" class="bi bi-youtube" target="_blank">
+            <img src="{% static 'img/Redes_Sociales/Youtube_logo.png' %}" width="45" height="45" alt="">
+          </a>
+        </div>
       </div>
-    <div class="grupo2">
-      <small>&copy; 2023 <b>CINEMAC</b> - Todos los Derechos Reservados.</small>
-    </div>
+      <div class="grupo2">
+        <small>&copy; 2023 <b>CINEMAC</b> - Todos los Derechos Reservados.</small>
+      </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <script src="{% static 'js/inicio.js' %}" async></script>
 </body>
+
 </html>

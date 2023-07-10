@@ -13,8 +13,6 @@
 
 body{
     font-family: var(--font-mono);
-    /*Arreglar a donde va la imágen*/
-    background: url(/CineMac/login-registro-js/imagen.jpg);
 }
 
 section{
@@ -25,6 +23,7 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 1em;
+    background-color: red;
 }
 
 section h1{
@@ -65,7 +64,6 @@ section form input{
 
 section form input[type='submit']{
     margin-top: 1.5em;
-    /*Color del boton*/
     background-color: #1a2537;
     color: #fff;
     font-family: var(--font-mono);

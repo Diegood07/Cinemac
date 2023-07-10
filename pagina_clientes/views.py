@@ -19,7 +19,13 @@ def inicio(request):
     return render(request,'html/inicio.html')
 
 def formulario(request):
-    return render(request,'html/formulario.html')
+    if request.method == 'POST':
+
+        return redirect('index')
+    else:
+        return render(request, 'html/formulario.html')
+
+
 
 def login(request):
     if request.method == "POST":
